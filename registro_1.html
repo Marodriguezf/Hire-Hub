@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro De Usuario</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./estilos/Style_registro.css">
+
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/1c7ea47b2b.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <section class="seccion1">
+        <div class="container py-5">
+            <div class="row py-5 justify-content-between">
+
+                <!-- Fromulario de Registro Usuario -->
+
+                <div class="formulario col-md-6">
+                    <form class="form" method="post" onsubmit="myaction.collect_data(event, 'registrarse')">
+                        <div class="titulo">
+                            <h1><strong>Empieza ahora</strong></h1>
+                        </div>
+                        <div class="parrafo">
+                            <p> <strong> Crea una cuenta para acceder a nuestra plataforma</strong></p>
+                        </div>
+                        <div class="contenido mt-2">
+                            <div class="encabezado">
+                                <label for="nombre"> Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre">
+                            </div>
+                        </div>
+                        <div class="contenido mt-2">
+                            <div class="encabezado">
+                                <label for="apellido"> Apellidos</label>
+                                <input type="text" class="form-control" id="cargo" name="cargo">
+                            </div>
+                        </div>
+                        <div class="contenido mt-2">
+                            <div class="encabezado">
+                                <label for="cedula"> Cedula</label>
+                                <input type="text" class="form-control" id="cedula" name="cdula">
+                            </div>
+                        </div>
+                        <div class="contenido mt-2">
+                            <div class="encabezado">
+                                <label for="date"> Fecha de Nacimiento</label>
+                                <input type="date" class="form-control" id="correo" name="fecha">
+                            </div>
+                        </div>
+                            <button class="btn btn-primary col-12 mt-3" ><a href="./registro_2.html"> Continuar</a></button>
+                            <div class="pregunta m-3">
+                                <p>¿Ya tienes una cuenta? <a href="./login.html">Inicia Sesión aqui</a></p>
+                            </div>
+                        
+                    </form>
+                </div>
+                <!-- Imagen -->
+                <div class="col-md-6">
+                    <div class="imagen">
+                        <img src="./imagenes/registro.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

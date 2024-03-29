@@ -1,0 +1,96 @@
+
+body{
+    background-color:#f3f3f3; 
+}
+
+.seccion1 {
+    position: relative;
+    margin-left: 200px;
+}
+
+/* Estilos Formulario */
+.formulario {
+    background-color:#ffff;
+    display: flex;
+    justify-content: center;
+    height:810px;
+    margin-top: 75px;
+    width: 600px;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.titulo{
+    text-align: center;
+}
+label{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+h1{
+    margin-top: -90px;
+    text-align: left;
+}
+p{
+    margin-bottom: 60px;
+}
+
+/* Estilos Imagen */
+
+.imagen img {
+    margin-top: 76px;
+    margin-left: -69px;
+    width:28%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: 75%;
+    position: absolute;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+.form {
+    padding-top: 120px;
+    
+}
+.btn{
+    background-color: #031432;
+    border-color: #031432;
+    width: 200px;
+    margin-left: 80px;
+    border-radius: 30px;
+}
+
+.encabezado{
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+.pregunta p{
+    text-align: center;
+    margin-left: 5px;
+}
+.contenido{
+    padding-top: 10px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.pregunta a {
+    text-decoration: none;
+    color:#023cdd ;
+    font-weight: bold;
+}

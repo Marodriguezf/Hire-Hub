@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Candidato</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./estilos/Style_index.css">
+
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/1c7ea47b2b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Menu lateral -->
+    <div class="sidebar">
+        <h1 class="logo">HireHub</h1>
+        <!--Perfil-->
+        <div class="perfil">
+            <img class="foto_perfil" src="./imagenes/user.jpg">
+            <div class="nombre_perfil">
+                <h4>Juan Ramirez</h4>
+                <p>Profesional de Selección</p>
+            </div>
+
+        </div>
+        <div class="menus">
+            <p>General</p>
+            <a href="index.php"><i class="iconos fa-solid fa-grip" name="dashboard-icon"></i>Dashboard</a>
+            <a href="vacantes.php""><i class="iconos fa-solid fa-briefcase" name="vacante-icon"></i>Vacantes</a>
+            <a href="candidatos.php"><i class="iconos fa-solid fa-user" name="candidato-icon"></i>Candidatos</a>
+            <p>Acciones</p>
+            <a href="crear_vacante.php"><i class="iconos fa-solid fa-circle-plus" name="crear-icon"></i>Crear una vacante</a>
+            <a href="registrar_candidato.php"><i class="iconos fa-solid fa-user-plus" name="registrar-icon"></i>Registrar
+                Candidato</a>
+            <p>Soporte</p>
+            <a href="index.php"><i class="iconos fa-solid fa-gear" name="setting-icon"></i>Configuración</a>
+            <a href="index.php"><i class="iconos fa-solid fa-circle-info" name="help-icon"></i>Soporte</a>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="cabecera-menu">
+            <div class="bienvenida">
+                <p>Registrar Un Candidato</p>
+            </div>
+        </div>
+    </div>
+    <div class="formulario row">
+        <!-- Columna 1 -->
+        <div class="col-md-6">
+            <form class="form" method="post" onsubmit="myaction.collect_data(event, 'registrarse')">
+    
+                <div class="contenido mt-3">
+                    <div class="encabezado">
+                        <p>Información Personal</p>
+                        <label for="Titulo">Nombre</label>
+                        <input type="text" class="form-control" id="Nombre" name="Nombre">
+                    </div>
+                </div>
+                <div class="contenido mt-2">
+                    <div class="encabezado">
+                        <label for="apellido">Fecha de Nacimiento</label>
+                        <input type="date" class="form-control" id="Fecha" name="Fecha">
+                    </div>
+                </div>
+                <div class="contenido mt-2">
+                    <div class="encabezado">
+                        <label for="cedula">Numero de Documento</label>
+                        <input type="text" class="form-control" id="Documento" name="Documento">
+                    </div>
+                </div>
+                <div class="contenido mt-2">
+                    <div class="encabezado">
+                        <label for="text"> Ciudad</label>
+                        <input type="text" class="form-control" id="ciudad" name="ciudad">
+                    </div>
+                </div>
+                <div class="contenido mt-2">
+                    <div class="encabezado">
+                        <label for="text">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                </div>
+                <div class="contenido mt-2">
+                    <div class="encabezado">
+                        <label for="text">telefono</label>
+                        <input type="text" class="form-control" id="telefono" name="telefono">
+                    </div>
+                </div>
+                <div class="contenido mt-2">
+                    <div class="encabezado">
+                        <label for="text">Fecha de postulación</label>
+                        <input type="text" class="form-control" id="fecha_postulacion" name="fecha_postulacion">
+                    </div>
+                </div>
+                <div class="contenido mt-2">
+                    <div class="encabezado">
+                        <label for="text">Vacante a la que postula</label>
+                        <input type="text" class="form-control" id="vacante_postulacion" name="vacante_postulacion">
+                    </div>
+                </div>
+                <div class="contenido mt-2">
+                    <div class="encabezado">
+                        <label for="text">Hoja de vida</label>
+                        <input type="file" class="form-control" id="cv" name="cv">
+                    </div>
+                </div>
+            </form>
+        </div>
+    
+        <!-- Columna 2 -->
+        <div class="columna2 col-md-6">
+            <form class="form" method="post" onsubmit="myaction.collect_data(event, 'registrarse')">
+                <!-- Presupuesto -->
+                <div class="contenido mt-2">
+                    <div class="encabezado">
+                        <label for="text">Actual/ultimo salario</label>
+                        <input type="text" class="form-control" id="ultimo_salario" name="ultimo_salario">
+                    </div>
+                </div>
+                <!-- Rango Salarial -->
+                <div class="contenido mt-2">
+                    <div class="encabezado">
+                        <label for="text">Expectativa Salarial</label>
+                        <input type="text" class="form-control" id="Salario" name="Salario">
+                    </div>
+                </div>
+
+                <div class="contenido mt-2">
+                    <div class="encabezado">
+                        <label for="text">¿Esta trabajando Actualmente?</label>
+                        <input type="text" class="form-control" id="aprobacion" name="aprobacion">
+                    </div>
+                </div>
+                <div class="contenido mt-2">
+                    <div class="encabezado">
+                        <label for="text">Estado civil</label>
+                        <input type="text" class="form-control" id="entrevista" name="entrevista">
+                    </div>
+                </div>
+                <div class="contenido mt-2">
+                    <div class="encabezado">
+                        <label for="text">Hijos</label>
+                        <input type="text" class="form-control" id="jefe" name="jefe">
+                    </div>
+                </div> 
+                <button class="btn btn-primary col-12 mt-3" >Registrar</button>
+                
+            </form>
+        </div>
+    </div>
+    
+
+
+
+
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

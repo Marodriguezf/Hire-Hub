@@ -1,0 +1,305 @@
+body{
+    background-color:#f3f3f3; 
+}
+
+.sidebar {
+width: 17%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: space-between;
+padding: 2rem;
+background-color:#031432;
+color:  #ffffff;
+position: fixed;
+left: 0;
+
+margin-top: -2px;
+}
+
+.menus{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom:90px;
+
+}
+
+.menus i {
+    color: #F2DA00;
+}
+
+.vacantes {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las cards se envuelvan en una nueva línea si no hay suficiente espacio horizontal */
+    gap: 2rem;
+}
+.menus a{
+    display: flex;
+    align-items: center;
+    color:rgb(255, 255, 255) ;
+    text-decoration: none;
+    font-size: 17px;
+}
+.menus .iconos{
+    margin-right: 0.5rem;
+
+}
+.menus p{
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.bienvenida p{
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 10px; 
+    color:#031432;
+    
+}
+
+.menus a:hover{
+    color:#ff7300
+
+}
+
+.perfil{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color:#f3f3f3;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    box-shadow:rgb(99, 99,99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+
+}
+
+.perfil:hover{
+    background-color:#e6e4e3;
+}
+
+.foto_perfil{
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+}
+
+.nombre_perfil h4 {
+    font-size:15px;
+}
+.nombre_perfil p {
+    font-size:12px;
+}
+
+.menu{
+    width:calc(100% - 20% - 25%);
+    min-height:20%;
+    min-width:300px;
+    height: max-content;
+    display:flex;
+    flex-direction: column;
+    padding: 2rem 2%;
+    margin-left: 30%;
+    background-color:#f3f3f3;
+    z-index: 1
+    
+
+}
+
+.cabecera-menu{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Oculta la barra lateral y solo se visualiza el icono */
+.icono {
+    background-color: rgb(255, 224, 193);
+    padding: 0.5rem;
+    border-radius: 20px;
+    display: none;
+}
+.buscar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    background-color: none;
+    border-radius: 20px;
+    padding: 0.5rem,1rem;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+
+.buscar input{
+    width: 100%; 
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: none;
+}
+.btn-buscar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 5%;
+    background-color: #ff7300;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    border: none;
+    box-shadow:rgb(0, 0,0, 0.16) 0px 1px 4px;
+    cursor: pointer;
+}
+
+.btn-buscar:hover {
+    background-color: blue;
+    color: white;
+
+}
+
+.vacantes{
+    margin-top: 70px;
+}
+.vacantes h1 {
+    color:#031432;
+    font-weight: bold;
+}
+
+.candidatos table{
+    margin-top: 70px;
+}
+.candidatos h1 {
+    color:#031432;
+    font-weight: bold;
+}
+
+.row{
+    margin-top: 13px;
+
+}
+
+.card{
+    border: none;
+    box-shadow:rgb(99, 99,99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+}
+
+.crear{
+    background-color: white;
+  
+}
+
+
+.card .card-link{
+    text-decoration: none;
+    color: #ff7300;
+    margin-left: 150px;
+}
+
+.card h2{
+    font-size: 40px;
+    color: #ff7300;
+}
+
+.card p{
+    color: grey; 
+    margin-bottom: -25px;
+}
+.icono-abierto{
+    margin-left: 5px;
+    color: rgb(8, 195, 8);
+}
+
+.icono-cerrado{
+    margin-left: 5px;
+    color: #ff0000;
+}
+
+.icono-pausa{
+    margin-left: 5px;
+    color: #0b0ffa;
+}
+
+.candidatos{
+    margin-top: 80px;
+
+}
+
+.nuevo-candidato{
+    margin-left: 5px;
+    color: rgb(28, 2, 232);
+}
+.candidato-contratado{
+    margin-left: 5px;
+    color: rgb(8, 195, 8);
+}
+
+.candidato-descartado{
+    margin-left: 5px;
+    color: #ff0000;
+}
+
+.formulario{
+    margin-left: 700px;
+    background-color: #ffff;
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 3%;
+
+}
+.form-control{
+    width: 90%;
+}
+.col-md-6 {
+    margin-right: -100px;
+    margin-bottom: 50px; 
+}
+
+.btn {
+    width: 30%;
+    color:#f3f3f3;
+    font-weight: bold;
+    background-color: #031432;
+    border-color: #031432;
+    margin-bottom: 5%;
+    margin-left: 300px;
+}
+
+.encabezado{
+    font-weight: bold;
+}
+
+.encabezado p { 
+    font-size: 20px;
+    color: #ff7300;
+}
+
+.col-md-6 .contenido{
+    margin-left: 90px;
+}
+
+.columna2{
+    margin-top: 55px;
+}
+.candidatos1{
+    margin-left: 600px;
+}
+.table{
+    width: fit-content;
+}
+
+.table .Titulos{
+    font-size: 18px;
+}
+
+.table .contenido{
+ font-weight:400;
+}
